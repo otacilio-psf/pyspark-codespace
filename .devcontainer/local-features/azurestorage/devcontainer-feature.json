@@ -1,0 +1,9 @@
+{
+    "id": "azure-storage",
+    "name": "Add Azure Storage jars",
+    "containerEnv": {},
+    "install": {
+        "app": "",
+        "file": "install.sh"
+    }
+}
