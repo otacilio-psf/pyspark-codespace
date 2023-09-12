@@ -1,6 +1,11 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {
-    "ghcr.io/devcontainers-contrib/features/spark-sdkman:2": {}
+    "ghcr.io/devcontainers-contrib/features/spark-sdkman:2": {
+      "version": "3.4.1",
+      "jdkVersion": "17"
+    },
+    "./local-features/deltalake": "latest",
+    "./local-features/azurestorage": "latest"
   }
 }
