@@ -1,0 +1,9 @@
+{
+    "id": "history-server",
+    "name": "Start Spark History server",
+    "containerEnv": {},
+    "install": {
+        "app": "",
+        "file": "install.sh"
+    }
+}
