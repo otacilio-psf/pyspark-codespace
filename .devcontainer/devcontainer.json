@@ -6,6 +6,7 @@
       "jdkVersion": "17"
     },
     "./local-features/deltalake": "latest",
-    "./local-features/azurestorage": "latest"
+    "./local-features/azurestorage": "latest",
+    "./local-features/history-server": "latest"
   }
 }
