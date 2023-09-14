@@ -7,3 +7,7 @@ spark.history.fs.logDirectory    file:///usr/local/sdkman/candidates/spark/curre
 EOF
 
 mkdir /usr/local/sdkman/candidates/spark/current/spark-events
+
+chmod 777 /usr/local/sdkman/candidates/spark/current/spark-events
+
+chmod +x /usr/local/sdkman/candidates/spark/current/sbin/start-history-server.sh

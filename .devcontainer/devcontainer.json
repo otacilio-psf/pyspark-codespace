@@ -1,5 +1,5 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "image": "mcr.microsoft.com/devcontainers/python:3.10",
   "features": {
     "ghcr.io/devcontainers-contrib/features/spark-sdkman:2": {
       "version": "3.4.0",
@@ -11,7 +11,7 @@
       "ghcr.io/devcontainers-contrib/features/spark-sdkman",
       "./local-features/history-server"
   ],
-  "postStartCommand": "/usr/local/sdkman/candidates/spark/current/sbin/start-history-server.sh",
+  "postStartCommand": "./.devcontainer/postCreateCommand.sh",
   "forwardPorts": [18080],
   "portsAttributes": {
     "18080": {
