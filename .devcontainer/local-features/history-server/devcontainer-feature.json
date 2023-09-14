@@ -1,9 +1,8 @@
 {
     "id": "history-server",
+    "version": "1.0.0",
     "name": "Start Spark History server",
-    "containerEnv": {},
-    "install": {
-        "app": "",
-        "file": "install.sh"
-    }
+    "installsAfter": [
+      "ghcr.io/devcontainers-contrib/features/spark-sdkman"
+    ]
 }

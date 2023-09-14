@@ -2,11 +2,20 @@
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {
     "ghcr.io/devcontainers-contrib/features/spark-sdkman:2": {
-      "version": "3.4.1",
+      "version": "3.4.0",
       "jdkVersion": "17"
     },
-    "./local-features/deltalake": "latest",
-    "./local-features/azurestorage": "latest",
     "./local-features/history-server": "latest"
+  },
+  "overrideFeatureInstallOrder": [
+      "ghcr.io/devcontainers-contrib/features/spark-sdkman",
+      "./local-features/history-server"
+  ],
+  "postStartCommand": "/usr/local/sdkman/candidates/spark/current/sbin/start-history-server.sh",
+  "forwardPorts": [18080],
+  "portsAttributes": {
+    "18080": {
+      "label": "history-server"
+    }
   }
 }
