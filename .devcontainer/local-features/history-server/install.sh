@@ -4,6 +4,8 @@ cat <<'EOF' >> /usr/local/sdkman/candidates/spark/current/conf/spark-defaults.co
 spark.eventLog.enabled           true
 spark.eventLog.dir               file:///usr/local/sdkman/candidates/spark/current/spark-events
 spark.history.fs.logDirectory    file:///usr/local/sdkman/candidates/spark/current/spark-events
+spark.sql.extensions             io.delta.sql.DeltaSparkSessionExtension
+spark.sql.catalog.spark_catalog  org.apache.spark.sql.delta.catalog.DeltaCatalog
 EOF
 
 mkdir /usr/local/sdkman/candidates/spark/current/spark-events
