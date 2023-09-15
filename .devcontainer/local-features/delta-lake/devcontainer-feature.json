@@ -1,9 +1,0 @@
-{
-    "id": "deltalake",
-    "name": "Add Delta Lake jars",
-    "containerEnv": {},
-    "install": {
-        "app": "",
-        "file": "install.sh"
-    }
-}
